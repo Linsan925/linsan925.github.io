@@ -71,155 +71,155 @@ function activateLightMode(){
   
 }</script><meta name="generator" content="Hexo 4.2.0"></head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Linsan 的个人博客</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar1.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">57</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">68</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">24</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 清单</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#1、模块加载系统"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">1、模块加载系统</span></a></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、模块加载系统"><span class="toc-number">1.</span> <span class="toc-text">1、模块加载系统</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(/images/top_img3.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">abp vnext2.0核心组件之模块加载组件源码解析</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-02-19<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-02-23</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Net-Core/">.Net Core</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span><span class="post-meta__separator">|</span><i class="fa fa-comments-o post-meta__icon fa-fw" aria-hidden="true"></i><span>评论数:</span><a href="/2020/02/19/abp%20vnext2%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6%E4%B9%8B%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E7%BB%84%E4%BB%B6%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/#post-comment"><span class="gitalk-comment-count comment-count"></span></a></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><p>abp vnext是abp官方在abp的基础之上构建的微服务架构,说实话,看完核心组件源码的时候,很兴奋,整个框架将组件化的细想运用的很好,真的超级解耦.老版整个框架依赖Castle的问题,vnext对其进行了解耦,支持AutoFac或者使用.Net Core的默认容器.vnext依然沿用EF core为主,其余ORM为辅助的思想,当然EF core来实现DDD确实有优势,EventBus提供了分布式版本,并提供了RabbitMQ的实现版本,Aop拦截器依然采用Castle.Core.AsyncInterceptor.这一点Dora.Interception貌似可以解决,估计如果高度组件化,那么这也是一个扩展点.整个模块加载系统更加的完善,提供了跟多可选择的特性,工作单元也进行了小幅度的重构,代码更加的通俗易懂(在实现异步工作单元嵌套的设计就有体现)等等还有很多,当然不是本文的重点,vnext2.0是个值得使用的框架.下面开始回到正题.</p>
 <h2 id="1、模块加载系统"><a href="#1、模块加载系统" class="headerlink" title="1、模块加载系统"></a>1、模块加载系统</h2><p>模块加载系统算是vnext的整个框架的入口,离了他,这个框架就废了.具体它有什么作用,看下面的代码分析,模块加载系统的入口如下:</p>
-<p><a href="/images/640.png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640.png" class="lazyload" title></a></p>
+<p><a href="/images/640.png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640.png" class="lazyload"></a></p>
 <p>每个应用框架必须要有一个启动模块类型,可以通过泛型或者Type实例传入,并且给定启动参数.</p>
 <p>启动模块类型:虽然上面给定的约束是必须实现IAbpModule,但是大多数的实现情况是</p>
-<p><a href="/images/640.webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640.webp" class="lazyload" title></a></p>
+<p><a href="/images/640.webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640.webp" class="lazyload"></a></p>
 <p>暂时不讲 AbpModule的源码,后面分析到具体的流程再做介绍.</p>
 <p>ok,看看AbpApplicationFactory工厂做了什么了,通过名字分析很明显.AbpApplication的工厂.</p>
-<p><a href="/images/640(1).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(1).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(1).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(1).webp" class="lazyload"></a></p>
 <p>分析这个方法就能得出,只要传入启动模块的类型和DI的ServiceCollection和启动应用的参数,就能构建一个IAbpApplicationWithExternalServiceProvider,那么看看IAbpApplicationWithExternalServiceProvider都有什么</p>
-<p><a href="/images/640(2).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(2).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(2).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(2).webp" class="lazyload"></a></p>
 <p>构建完成基本的实体后,调用Initialize方法初始化框架.再看看IAbpApplication接口</p>
-<p><a href="/images/640(3).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(3).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(3).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(3).webp" class="lazyload"></a></p>
 <p>包含启动模块类型,DI注入集合、DI服务提供类,以及一个关闭应用程序必须执行的ShutDown方法.在看看IModuleContainer</p>
-<p><a href="/images/640(1).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(1).png" class="lazyload" title></a></p>
+<p><a href="/images/640(1).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(1).png" class="lazyload"></a></p>
 <p>包含模块集合,在Abp中,模块代表一个程序集.这里就是启动abp vnext框架的启动模块类型所依赖的所有模块类型即所有的程序集集合你可以这样理解.因为一个Module类型(继承AbpModule类型或者实现IAbpModule接口的类型代表一个程序集.且一个程序集只有一个Module类型(继承AbpModule类型或者实现IAbpModule接口的类型).</p>
 <p>ok,接着回到上面的代码</p>
-<p><a href="/images/640(4).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(4).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(4).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(4).webp" class="lazyload"></a></p>
 <p>此处省略一些无关核心流程的代码,代码如下:</p>
-<p><a href="/images/640(2).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(2).png" class="lazyload" title></a></p>
+<p><a href="/images/640(2).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(2).png" class="lazyload"></a></p>
 <p>简单的一些非空校验,这里有一个非常有趣的设计,如下:</p>
-<p><a href="/images/640(5).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(5).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(5).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(5).webp" class="lazyload"></a></p>
 <p>继续查看,如下</p>
-<p><a href="/images/640(3).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(3).png" class="lazyload" title></a></p>
+<p><a href="/images/640(3).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(3).png" class="lazyload"></a></p>
 <p>ObjectAccessor源码如下:</p>
-<p><a href="/images/640(6).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(6).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(6).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(6).webp" class="lazyload"></a></p>
 <p>类似装饰者模式,内部容纳一个类型.最后</p>
-<p><a href="/images/640(7).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(7).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(7).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(7).webp" class="lazyload"></a></p>
 <p>ok,到这里整个流程大致就是,给IServiceProvider创建一个ObjectAccessor,且ObjectAccessor没有Value值,同时将ObjectAccessor写入DI,并做了简单的搜索优化.关于IServiceProvider的ObjectAccessor的作用,暂时不介绍,后续会说.</p>
 <p>接着看如下代码:</p>
-<p><a href="/images/640(8).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(8).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(8).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(8).webp" class="lazyload"></a></p>
 <p>初始化外部设置参数,接招向DI中注入IAbpApplication和IModuleContainer的单例对象.</p>
 <p>接着看下面的代码:</p>
-<p><a href="/images/640(4).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(4).png" class="lazyload" title></a></p>
-<p><a href="/images/640(5).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(5).png" class="lazyload" title></a></p>
+<p><a href="/images/640(4).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(4).png" class="lazyload"></a></p>
+<p><a href="/images/640(5).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(5).png" class="lazyload"></a></p>
 <p>注入配置文件、日志、国际化等服务.接着看AddCoeAbpServices方法</p>
-<p><a href="/images/640(6).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(6).png" class="lazyload" title></a></p>
-<p><a href="/images/640(7).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(7).png" class="lazyload" title></a></p>
+<p><a href="/images/640(6).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(6).png" class="lazyload"></a></p>
+<p><a href="/images/640(7).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(7).png" class="lazyload"></a></p>
 <p>注入ModuleLoader(处理程序集间依赖关系,处理模块加载生命周期、的核心类型)、程序集发现类(所有程序集都能通过该类型拿到,只要程序集加入到了框架)、类型发现类(程序集集合所包含的所有类型)</p>
-<p><a href="/images/640(9).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(9).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(9).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(9).webp" class="lazyload"></a></p>
 <p>初始化配置文件系统、等等操作,接着看如下代码,将上述类型写入DI</p>
-<p><a href="/images/640(8).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(8).png" class="lazyload" title></a></p>
+<p><a href="/images/640(8).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(8).png" class="lazyload"></a></p>
 <p>接下去这行代码就有趣了,如下:</p>
-<p><a href="/images/640(10).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(10).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(10).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(10).webp" class="lazyload"></a></p>
 <p>看看它干了什么,如下:</p>
-<p><a href="/images/640(11).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(11).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(11).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(11).webp" class="lazyload"></a></p>
 <p>看看 services.GetConventionalRegistrars干了什么,如下:</p>
-<p><a href="/images/640(9).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(9).png" class="lazyload" title></a></p>
+<p><a href="/images/640(9).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(9).png" class="lazyload"></a></p>
 <p>很明显,从DI中读取程序集注册规则类列表,如果没有,则写入默认的程序集注册规则类.所以,这里如果你想自定义程序集注册规则,那么只需在有效的应用程序加载生命周期阶段注入自定义的程序集注册类即可,该类型必须实现下图所示接口</p>
-<p><a href="/images/640(10).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(10).png" class="lazyload" title></a></p>
+<p><a href="/images/640(10).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(10).png" class="lazyload"></a></p>
 <p>ok,这个扩展点讲完之后,看看默认的程序集注册规则类DefaultConventionalRegistrar干了什么,如下：</p>
-<p><a href="/images/640(12).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(12).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(12).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(12).webp" class="lazyload"></a></p>
 <p>很简单,自行阅读,再看看AddType的实现,如下：</p>
-<p><a href="/images/640(13).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(13).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(13).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(13).webp" class="lazyload"></a></p>
 <p>支持类型跳过,如果类型打了DisableConventionalRegistrationAttribute特性,那么该类型将不会被写入DI.</p>
-<p><a href="/images/640(14).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(14).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(14).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(14).webp" class="lazyload"></a></p>
 <p>如果当前类型没有打DependencyAttribute,或者打了DependencyAttribute特性,没有设置Lifetime,则当前类型也不会写入DI.</p>
 <p>这里注意,根据代码可以发现,abp给类型生命周期的方式有两种,老版只有一种,如下:</p>
 <ul>
 <li>第一种:</li>
 </ul>
-<p><a href="/images/640(11).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(11).png" class="lazyload" title></a></p>
+<p><a href="/images/640(11).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(11).png" class="lazyload"></a></p>
 <p>通过实现ISingletonDependency(单例注入)，ITransientDependency(普通引用类型)，IScopedDependency(范围内唯一)三大接口来表示当前类型的生命周期,老版abp也是使用这种方式,但是没有IScopedDependency</p>
 <ul>
 <li>第二种:</li>
 </ul>
-<p><a href="/images/640(12).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(12).png" class="lazyload" title></a></p>
+<p><a href="/images/640(12).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(12).png" class="lazyload"></a></p>
 <p>通过DependencyAttribute特性,结构如下</p>
-<p><a href="/images/640(13).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(13).png" class="lazyload" title></a></p>
+<p><a href="/images/640(13).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(13).png" class="lazyload"></a></p>
 <p>接着,如下代码</p>
-<p><a href="/images/640(14).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(14).png" class="lazyload" title></a></p>
+<p><a href="/images/640(14).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(14).png" class="lazyload"></a></p>
 <p>如果当前类型打了ExposeServicesAttribute特性,那么则会调用该特性的如下方法</p>
-<p><a href="/images/640(15).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(15).png" class="lazyload" title></a></p>
+<p><a href="/images/640(15).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(15).png" class="lazyload"></a></p>
 <p>这个方法的用途是找出如果我们需要从DI中释出个类型,可以使用哪几种方式(常用的是接口,自身等),示例代码如下:</p>
-<p><a href="/images/640(15).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(15).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(15).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(15).webp" class="lazyload"></a></p>
 <p>那么如果需要在框架中使用TestClass的实现,可以用ITestClass接口进行依赖注入,因为</p>
-<p><a href="/images/640(16).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(16).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(16).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(16).webp" class="lazyload"></a></p>
 <p>当然这里可以写多个,因为</p>
-<p><a href="/images/640(17).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(17).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(17).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(17).webp" class="lazyload"></a></p>
 <p>ExposeServicesAttribute特性中的IncludeDefaults和IncludeSelf属性是默认的策略</p>
 <p>IncludeDefaults设置为true是根据类型找出其实现的接口,且接口必须以I字母开头,且接口后面的名字必须和当前类型相等.如果匹配那么该接口有效,也可以进行依赖注入.</p>
 <p>IncludeSelf设置为true,则可以通过当前类型进行依赖注入.</p>
 <p>接着看如下代码</p>
-<p><a href="/images/640(16).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(16).png" class="lazyload" title></a></p>
-<p><a href="/images/640(17).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(17).png" class="lazyload" title></a></p>
+<p><a href="/images/640(16).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(16).png" class="lazyload"></a></p>
+<p><a href="/images/640(17).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(17).png" class="lazyload"></a></p>
 <p>很简单,只需在有效的应用程序加载生命周期阶段注入指定的Action,注入方式如下:</p>
-<p><a href="/images/640(18).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(18).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(18).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(18).webp" class="lazyload"></a></p>
 <p>使用例子,类型映射,如下:</p>
-<p><a href="/images/640(19).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(19).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(19).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(19).webp" class="lazyload"></a></p>
 <p>最后看如下代码</p>
-<p><a href="/images/640(18).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(18).png" class="lazyload" title></a></p>
+<p><a href="/images/640(18).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(18).png" class="lazyload"></a></p>
 <p>这段代码很简单,就不解释了.DependencyAttribute特性给上对应的值就能执行指定的操作,ok,到这里总结一下这种设计的用处,非常nice,原先老版abp注册系统核心单例类型是依赖castle的,如果换成这种设计方式,更加的灵活,如果我们需要给底层添加一个核心类,只需要创建一个类,然后配合Dependency特性和ExposeServices特性即可和DI完美集合,同时还提供了Action扩展,让你可以干很多的事情,就这一点,比老版abp好太多.到这里DefaultConventionalRegistrar介绍完毕</p>
 <p>ok,在回到AddCoreAbpServices方法,如下:</p>
-<p><a href="/images/640(19).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(19).png" class="lazyload" title></a></p>
+<p><a href="/images/640(19).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(19).png" class="lazyload"></a></p>
 <p>这里也很简单,向DI中预先写入AbpModuleLifecycleOptions，该参数用于控制模块加载的生命周期,这四个Contributor分别对应模块加载生命周期的接口,</p>
-<p><a href="/images/640(20).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(20).png" class="lazyload" title></a></p>
-<p><a href="/images/640(21).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(21).png" class="lazyload" title></a></p>
-<p><a href="/images/640(20).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(20).webp" class="lazyload" title></a></p>
-<p><a href="/images/640(22).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(22).png" class="lazyload" title></a></p>
+<p><a href="/images/640(20).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(20).png" class="lazyload"></a></p>
+<p><a href="/images/640(21).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(21).png" class="lazyload"></a></p>
+<p><a href="/images/640(20).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(20).webp" class="lazyload"></a></p>
+<p><a href="/images/640(22).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(22).png" class="lazyload"></a></p>
 <p>再看看核心Module的抽象</p>
-<p><a href="/images/640(21).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(21).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(21).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(21).webp" class="lazyload"></a></p>
 <p>到这里肯定很多人很困惑,所以这里跳过一些流程,看下ModuleManager如何处理,如下</p>
-<p><a href="/images/640(22).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(22).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(22).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(22).webp" class="lazyload"></a></p>
 <p>释出Contributor集合</p>
-<p><a href="/images/640(23).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(23).png" class="lazyload" title></a></p>
-<p><a href="/images/640(24).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(24).png" class="lazyload" title></a></p>
+<p><a href="/images/640(23).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(23).png" class="lazyload"></a></p>
+<p><a href="/images/640(24).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(24).png" class="lazyload"></a></p>
 <p>Contributor的作用很明显,模块加载生命周期中你可以执行的一些方法.这些方法会拿到一个ServiceProvider,即你可以操作DI,完成一些关键服务的操作.</p>
 <p>关于模块加载的生命周期方法有哪些,如下</p>
-<p><a href="/images/640(23).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(23).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(23).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(23).webp" class="lazyload"></a></p>
 <p>每个接口对应一个生命周期,这和老版Abp的设计也完全不同.优缺点暂时没发现.</p>
 <p>接着,如下:</p>
-<p><a href="/images/640(25).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(25).png" class="lazyload" title></a></p>
+<p><a href="/images/640(25).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(25).png" class="lazyload"></a></p>
 <p>调用ModuleLoader单例实例,执行加载模块的方法.核心算法和老版Abp一样,这里稍微解释下,</p>
 <p>核心点如下：</p>
 <ol>
 <li>加载启动模块所有依赖的模块,并设置依赖项,最后生成IAbpModuleDescriptor集合</li>
 </ol>
-<p><a href="/images/640(26).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(26).png" class="lazyload" title></a></p>
+<p><a href="/images/640(26).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(26).png" class="lazyload"></a></p>
 <ol start="2">
 <li>模块进行拓扑排序,进行循环依赖检测</li>
 </ol>
-<p><a href="/images/640(24).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(24).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(24).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(24).webp" class="lazyload"></a></p>
 <p>ok,下面开始解析核心点源码</p>
 <p>通过DependsOnAttribute特性来处理模块间的依赖关系.核心代码如下:</p>
-<p><a href="/images/640(27).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(27).png" class="lazyload" title></a></p>
+<p><a href="/images/640(27).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(27).png" class="lazyload"></a></p>
 <p>拿到当前类型的DependsOnAttribute特性,解析其内部的类型,加入到dependencies依赖类型集合.所以表示模块间的依赖关系根据如上代码可以得出两种模式,如下:</p>
-<p><a href="/images/640(25).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(25).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(25).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(25).webp" class="lazyload"></a></p>
 <blockquote>
 <p>常用的是第二种.</p>
 </blockquote>
 <p>通过上面的方法拿到所有的依赖类型集合之后,执行下面的递归方法</p>
-<p><a href="/images/640(28).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(28).png" class="lazyload" title></a></p>
+<p><a href="/images/640(28).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(28).png" class="lazyload"></a></p>
 <p>这样就可以遍历出所有的启动模块以来的所有模块.同时去除了重复的模块.最后遍历所有的模块生成如下类型的实例</p>
-<p><a href="/images/640(29).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(29).png" class="lazyload" title></a></p>
+<p><a href="/images/640(29).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(29).png" class="lazyload"></a></p>
 <p>模块实例的生命周期为单例,如下图:</p>
-<p><a href="/images/640(30).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(30).png" class="lazyload" title></a></p>
+<p><a href="/images/640(30).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(30).png" class="lazyload"></a></p>
 <p>接着开始处理启动参数中配置的插件模块</p>
-<p><a href="/images/640(31).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(31).png" class="lazyload" title></a></p>
+<p><a href="/images/640(31).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(31).png" class="lazyload"></a></p>
 <p>插件模块的三种添加方式如下</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public static class PlugInSourceListExtensions</span><br><span class="line">    &#123;</span><br><span class="line">        public static void AddFolder(</span><br><span class="line">            [NotNull] this PlugInSourceList list,</span><br><span class="line">            [NotNull] string folder,</span><br><span class="line">            SearchOption searchOption &#x3D; SearchOption.TopDirectoryOnly)</span><br><span class="line">        &#123;</span><br><span class="line">            Check.NotNull(list, nameof(list));</span><br><span class="line"></span><br><span class="line">            list.Add(new FolderPlugInSource(folder, searchOption));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public static void AddTypes(</span><br><span class="line">            [NotNull] this PlugInSourceList list,</span><br><span class="line">            params Type[] moduleTypes)</span><br><span class="line">        &#123;</span><br><span class="line">            Check.NotNull(list, nameof(list));</span><br><span class="line"></span><br><span class="line">            list.Add(new TypePlugInSource(moduleTypes));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public static void AddFiles(</span><br><span class="line">            [NotNull] this PlugInSourceList list,</span><br><span class="line">            params string[] filePaths)</span><br><span class="line">        &#123;</span><br><span class="line">            Check.NotNull(list, nameof(list));</span><br><span class="line"></span><br><span class="line">            list.Add(new FilePlugInSource(filePaths));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
 
 <p>这边只介绍一种,其余核心流程都一样,如下:</p>
 <p>FolderPlugInSource添加插件类型,其核心参数如下:</p>
-<p><a href="/images/640(26).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(26).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(26).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(26).webp" class="lazyload"></a></p>
 <p>直接给文件夹路径+名称,扫描下面的插件程序集,并进行程序集过滤,核心的过滤方法如下:</p>
-<p><a href="/images/640(33).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(33).png" class="lazyload" title></a></p>
+<p><a href="/images/640(33).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(33).png" class="lazyload"></a></p>
 <p>最后,返回实现了AbpModule的核心模块类型</p>
-<p><a href="/images/640(27).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(27).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(27).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(27).webp" class="lazyload"></a></p>
 <p>ok,接着回到模块加载系统的加载插件方法,如下:</p>
-<p><a href="/images/640(28).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(28).webp" class="lazyload" title></a></p>
-<p><a href="/images/640(29).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(29).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(28).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(28).webp" class="lazyload"></a></p>
+<p><a href="/images/640(29).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(29).webp" class="lazyload"></a></p>
 <p>ok,这里可以发现亮点</p>
 <ol>
 <li><p>你可以同时添加多种形式的插件宿主,可以是文件夹下所有的插件程序集、可以是程序集解决方案、也可以是一个指定的程序集文件.Abp暂时提供了这三种,当然如果你有实力,也可以编写远程调用程序集插件.</p>
@@ -227,42 +227,42 @@ function activateLightMode(){
 <li><p>和模块加载系统完成了集成,和上面的流程一样,加载出所有启动模块依赖的类型,并写入DI</p>
 </li>
 </ol>
-<p><a href="/images/640(30).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(30).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(30).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(30).webp" class="lazyload"></a></p>
 <p>ok,到这里插件模块介绍完毕.最后和普通模块一样生成IAbpModuleDescriptor集合</p>
 <p>接着,拿到所有的模块集合之后(包括插件),开始设置所有模块间的依赖关系,如下,细心的会发现上面的</p>
-<p><a href="/images/640(34).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(34).png" class="lazyload" title></a></p>
+<p><a href="/images/640(34).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(34).png" class="lazyload"></a></p>
 <p>中有依赖集合.下面的代码就是整理这个关系的.</p>
-<p><a href="/images/640(35).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(35).png" class="lazyload" title></a></p>
+<p><a href="/images/640(35).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(35).png" class="lazyload"></a></p>
 <p>这里,逻辑很简单,就不介绍了,直接跳过,主要是通过DependsOnAttribute特性来实现.</p>
 <p>接下去介绍核心点二模块进行拓扑排序,进行循环依赖检测</p>
 <p>此时,我们拿到了一个完整的模块集合,内部的依赖关系也已经初步执行好.</p>
-<p><a href="/images/640(36).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(36).png" class="lazyload" title></a></p>
+<p><a href="/images/640(36).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(36).png" class="lazyload"></a></p>
 <p>核心代码如下,关于拓扑排序(算法的核心逻辑自行查阅代码,主要内容是按照依赖关系依次加入到集合,后期可一次执行,这样就可以集成生命周期),防止循环依赖就不说了,接着,将启动模块放到最后为了配合模块生命周期方法的执行.</p>
 <p>ok,到这里两个核心点介绍完毕.</p>
 <p>接下去.如下代码</p>
-<p><a href="/images/640(31).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(31).webp" class="lazyload" title></a></p>
-<p><a href="/images/640(32).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(32).webp" class="lazyload" title></a></p>
-<p><a href="/images/640(33).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(33).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(31).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(31).webp" class="lazyload"></a></p>
+<p><a href="/images/640(32).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(32).webp" class="lazyload"></a></p>
+<p><a href="/images/640(33).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(33).webp" class="lazyload"></a></p>
 <p>生成如下上下文,并单例写入DI</p>
-<p><a href="/images/640(34).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(34).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(34).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(34).webp" class="lazyload"></a></p>
 <p>这个Item属性醉了,个人感觉没什么用,因为下面这个for循环</p>
-<p><a href="/images/640(35).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(35).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(35).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(35).webp" class="lazyload"></a></p>
 <p>接着执行如下代码</p>
-<p><a href="/images/640(37).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(37).png" class="lazyload" title></a></p>
-<p><a href="/images/640(38).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(38).png" class="lazyload" title></a></p>
+<p><a href="/images/640(37).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(37).png" class="lazyload"></a></p>
+<p><a href="/images/640(38).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(38).png" class="lazyload"></a></p>
 <p>所以这两个生命周期接口执行的时间节点一定要记住.同时上下文会给你DI容器,方便你进行任何必须的类型操作.</p>
 <p>接着</p>
-<p><a href="/images/640(39).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(39).png" class="lazyload" title></a></p>
+<p><a href="/images/640(39).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(39).png" class="lazyload"></a></p>
 <p>将当前模块类型对应的程序集中所有的类型写入DI,默认的注入规则上面已经介绍,默认的注册器类型为DefaultConventionalRegistrar.同时执行生命周期接口IZcfModule.</p>
 <p>到这里已经执行的三个模块生命周期接口如下:</p>
-<p><a href="/images/640(40).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(40).png" class="lazyload" title></a></p>
+<p><a href="/images/640(40).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(40).png" class="lazyload"></a></p>
 <p>切记其执行的节点.</p>
 <p>接着开始初始化模块系统,注意,这边我跳过了DI容器切换的的内容(关于DI容器切换的源码分析后续的博文会介绍)代码如下:</p>
-<p><a href="/images/640(36).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(36).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(36).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(36).webp" class="lazyload"></a></p>
 <p>从DI中释出单例ModuleManager类,执行如下初始化方法</p>
-<p><a href="/images/640(41).png" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(41).png" class="lazyload" title></a></p>
+<p><a href="/images/640(41).png" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(41).png" class="lazyload"></a></p>
 <p>这段代码进行简单的模块加载日志记录,后面的核心代码上面说过,执行预定义的模块生命周期方法,对应如下接口：</p>
-<p><a href="/images/640(37).webp" data-fancybox="group" data-caption class="fancybox"><img alt data-src="/images/640(37).webp" class="lazyload" title></a></p>
+<p><a href="/images/640(37).webp" data-fancybox="group" data-caption class="fancybox"><img alt title data-src="/images/640(37).webp" class="lazyload"></a></p>
 <p>执行这四个接口必须实现的方法,当然在AbpModule中都以virtual标记,所以你可以按照顺序一次进行一些类型操作.但是这几个生命周期函数,上下文只提供ServiceProvider,</p>
 <p>功能做了限制.其余三个生命周期接口提供的是IServiceCollection实例,所以他们之间还是有差别的,除了执行顺序之外.</p>
 <p>ok,到这里abp vnext2.0的核心模块记载系统核心流程源码分析结束了,纯属个人理解,能力有限,有问题请指正!</p>

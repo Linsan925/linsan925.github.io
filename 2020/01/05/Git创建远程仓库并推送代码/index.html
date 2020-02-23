@@ -89,25 +89,25 @@ function activateLightMode(){
 </ul>
 <p><strong>官网：</strong> <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br><strong>源码：</strong> <a href="https://github.com/git/git/" target="_blank" rel="noopener">https://github.com/git/git/</a></p>
 <h2 id="待见Git工作环境"><a href="#待见Git工作环境" class="headerlink" title="待见Git工作环境"></a>待见Git工作环境</h2><h3 id="下载Git"><a href="#下载Git" class="headerlink" title="下载Git"></a>下载Git</h3><p>打开 <a href="https://git-scm.com/" target="_blank" rel="noopener" title="Git下载地址">git官网</a>，下载git对应操作系统的版本。</p>
-<p><a href="/images/63651-20170904224935226-646404598.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/63651-20170904224935226-646404598.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/63651-20170904224935226-646404598.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/63651-20170904224935226-646404598.png" class="lazyload"></a></p>
 <p>选择版本：</p>
-<p><a href="/images/63651-20170904225056351-1443818096.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/63651-20170904225056351-1443818096.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/63651-20170904225056351-1443818096.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/63651-20170904225056351-1443818096.png" class="lazyload"></a></p>
 <p>这里我选择下载<a href="https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe" target="_blank" rel="noopener"><strong>64-bit Git for Windows Setup</strong></a></p>
-<p><a href="/images/63651-20170904225407569-334038713.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/63651-20170904225407569-334038713.png" class="lazyload" title="image"></a></p>
-<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p><a href="/images/63651-20170904225914054-2025747538.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/63651-20170904225914054-2025747538.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/63651-20170904225407569-334038713.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/63651-20170904225407569-334038713.png" class="lazyload"></a></p>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p><a href="/images/63651-20170904225914054-2025747538.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/63651-20170904225914054-2025747538.png" class="lazyload"></a></p>
 <p>选择安装配置信息</p>
-<p><a href="/images/63651-20170904225939491-904441630.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/63651-20170904225939491-904441630.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/63651-20170904225939491-904441630.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/63651-20170904225939491-904441630.png" class="lazyload"></a></p>
 <p>一直Next默认就好了，如果需要设置就要仔细读一下安装界面上的选项。</p>
 <h2 id="创建本地项目"><a href="#创建本地项目" class="headerlink" title="创建本地项目"></a>创建本地项目</h2><p>在任意目录下创建文件夹，然后进入文件夹后右键选择Git Bash ，进入git cmd，执行代码git init</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></div>
 
-<p><a href="/images/13098542-9ee61d2518499afc.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-9ee61d2518499afc.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-9ee61d2518499afc.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-9ee61d2518499afc.png" class="lazyload"></a></p>
 <p><strong>这时你会发现test里面多了个.git文件夹，它是Git用来跟踪和管理版本库的。</strong>如果你看不到，是因为它默认是隐藏文件，那你就需要设置一下让隐藏文件可见。</p>
 <p>这时候你就可以把你的项目粘贴到这个本地Git仓库里面（粘贴后你可以通过git status来查看你当前的状态）</p>
 <h2 id="添加项目文件到暂存区"><a href="#添加项目文件到暂存区" class="headerlink" title="添加项目文件到暂存区"></a>添加项目文件到暂存区</h2><p>使用命令 git add . 把项目添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></div>
 
-<p><a href="/images/13098542-aaee408f02dd4e72.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-aaee408f02dd4e72.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-aaee408f02dd4e72.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-aaee408f02dd4e72.png" class="lazyload"></a></p>
 <p>在这个过程中你其实可以一直使用git status来查看你当前的状态。</p>
 <h2 id="Commit"><a href="#Commit" class="headerlink" title="Commit"></a>Commit</h2><p>用 git commit -m “第一次提交”把项目提交到仓库。</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;第一次提交&quot;</span><br></pre></td></tr></table></figure></div>
@@ -115,23 +115,23 @@ function activateLightMode(){
 <blockquote>
 <p>-m后面引号里面是本次提交的注释内容，这个可以不写，但最好写上，不然会报错，详情自行Google。 好了，我们本地Git仓库这边的工作做完了，下面就到了连接远程仓库（也就是连接Github）</p>
 </blockquote>
-<p><a href="/images/13098542-fba33f7a8f851b29%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-fba33f7a8f851b29%5B1%5D.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-fba33f7a8f851b29%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-fba33f7a8f851b29%5B1%5D.png" class="lazyload"></a></p>
 <h2 id="创建远程仓库"><a href="#创建远程仓库" class="headerlink" title="创建远程仓库"></a>创建远程仓库</h2><p>由于本地Git仓库和Github仓库之间的传输是通过SSH加密的，所以连接时需要设置一下：</p>
 <h3 id="创建SSH-KEY"><a href="#创建SSH-KEY" class="headerlink" title="创建SSH KEY"></a>创建SSH KEY</h3><p>创建SSH KEY。先看一下你C盘用户目录下有没有.ssh目录，有的话看下里面有没有id_rsa和id_rsa.pub这两个文件，有就跳到下一步，没有就通过下面命令创建<br>$ ssh-keygen -t rsa -C “<a href="mailto:t.zhangl@qq.com">t.zhangl@qq.com</a>“</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;t.zhangl@qq.com&quot;</span><br></pre></td></tr></table></figure></div>
 
 <h3 id="登录Github"><a href="#登录Github" class="headerlink" title="登录Github"></a>登录Github</h3><p>—&gt;点击右上角的图标 —&gt;选择Settings —&gt;点击左边的SSH and GPG KEYS —&gt;点击右上角的New SSH key —&gt;Title随便填 —&gt;把刚才id_rsa.pub里面的内容复制到Title下面的Key内容框里面 —&gt;最后点击Add SSH key —&gt;完成SSH Key的加密。具体步骤如下：</p>
-<p><a href="/images/13098542-1bd5d81617e91e3e%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-1bd5d81617e91e3e%5B1%5D.png" class="lazyload" title="image"></a></p>
-<h3 id="在Github上创建一个Git仓库。"><a href="#在Github上创建一个Git仓库。" class="headerlink" title="在Github上创建一个Git仓库。"></a>在Github上创建一个Git仓库。</h3><p><a href="/images/13098542-cc9081220c33a824%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-cc9081220c33a824%5B1%5D.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-1bd5d81617e91e3e%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-1bd5d81617e91e3e%5B1%5D.png" class="lazyload"></a></p>
+<h3 id="在Github上创建一个Git仓库。"><a href="#在Github上创建一个Git仓库。" class="headerlink" title="在Github上创建一个Git仓库。"></a>在Github上创建一个Git仓库。</h3><p><a href="/images/13098542-cc9081220c33a824%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-cc9081220c33a824%5B1%5D.png" class="lazyload"></a></p>
 <h2 id="创建关联"><a href="#创建关联" class="headerlink" title="创建关联"></a>创建关联</h2><p>在Github上创建好Git仓库后通过命令git remote add origin <a href="mailto:git@github.com">git@github.com</a>:linsan925/test.git和本地仓库进行关联</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:linsan925&#x2F;test.git</span><br></pre></td></tr></table></figure></div>
 
-<p><a href="/images/13098542-1a0dcf2ee4e03a37%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-1a0dcf2ee4e03a37%5B1%5D.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-1a0dcf2ee4e03a37%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-1a0dcf2ee4e03a37%5B1%5D.png" class="lazyload"></a></p>
 <p>注意 origin 后面加的是你Github上创建好的仓库的地址。</p>
-<p><a href="/images/13098542-db664836f0524179%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-db664836f0524179%5B1%5D.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-db664836f0524179%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-db664836f0524179%5B1%5D.png" class="lazyload"></a></p>
 <h2 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h2><p>关联好之后通过命令git push -u origin master将本地库的所有内容推送到远程仓（Github）</p>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">Code</div><div class="copy-notice"></div><i class="fa fa-clipboard" aria-hidden="true"></i></div><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></div>
-<p><a href="/images/13098542-c4f5586f356eaaab%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" data-src="/images/13098542-c4f5586f356eaaab%5B1%5D.png" class="lazyload" title="image"></a></p>
+<p><a href="/images/13098542-c4f5586f356eaaab%5B1%5D.png" data-fancybox="group" data-caption="image" class="fancybox"><img alt="image" title="image" data-src="/images/13098542-c4f5586f356eaaab%5B1%5D.png" class="lazyload"></a></p>
 <blockquote>
 <p>由于新建的远程仓库是空的，所以要加上-u这个参数，等远程仓库里面有了内容之后，下次再从本地库上传内容的时候只需 git push origin master<br>刷新Github页面进入刚才新建的仓库里面就会发现项目已经上传成功</p>
 </blockquote>
